@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">Pet Control</string>
+    <string name="title_activity_main2">Pet Control</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="nombre_splash">La veterinaria</string>
+    <string name="texto_content">Una herramienta dieseñada para fortalecer y fomentar el cuidado y responsabilidad con nuestras mascotas,orientada en la ayuda para el control de propietarios y mascotas</string>
+    <string name="registro_nuevo_elemento">Registrar elemento</string>
+    <string name="ver_usuarios">Ver Usuario</string>
+    <string name="ver_mascotas">Ver mascotas</string>
+    <string name="buscar_usuario">Buscar Usuario</string>
+    <string name="veterinarias">Veterinarias</string>
+    <string name="zonas_cercanas">Zonas de Interés</string>
+    <string name="acerca_de">Acerca de</string>
+    <string name="otras_opciones">Otras Opciones</string>
+    <string name="documento_identificacion_usuario">Documento Identificación:</string>
+    <string name="nombre_usuario">Nombre:</string>
+    <string name="telefono_usuario">Teléfono:</string>
+    <string name="registrar">Registrar</string>
+    <string name="nuevo_usuario">Nuevo Usuario</string>
+    <string name="nueva_mascota">Nueva Mascota</string>
+    <string name="informacion_mascota">INFORMACIÓN MASCOTA</string>
+    <string name="id_mascota">Identificación Mascota</string>
+    <string name="nombre_mascota">Nombre Mascota</string>
+    <string name="raza">Raza Mascota</string>
+    <string name="informacion_dueño">INFORMACIÓN DUEÑO</string>
+    <string name="borrar">ELIMINAR</string>
+    <string name="propietario">Propietario</string>
+    <string name="registrar_usuario">Registrar Nuevo Usuario</string>
+    <string name="registrar_nueva_mascota">Registrar Nueva Mascota</string>
+    <string name="seleccione_una_opcion">Seleccione una Opción</string>
+    <string name="seleccione">Seleccione</string>
+    <string name="regresar">REGRESAR</string>
+    <string name="id_veterinaria">Identificación Veterinaria</string>
+    <string name="nombre_veterinaria">Nombre Veterinaria</string>
+    <string name="barrio">Barrio</string>
+    <string name="parques">Parques</string>
+    <string name="desarrollado_por">Desarrollado por: Juan Moncayo</string>
+    <string name="programa">Programa: Ingeniería de Sistemas</string>
+    <string name="error_eliminar">El usuario tiene mascotas no se puede elimnar :</string>
+    <string name="eliminar_mascota">Se eliminó mascota</string>
+    <string name="documento_no_existe">El documento no existe</string>
+    <string name="eliminar_usuario_correcto">Se eliminó usuario</string>
+    <string name="id_registro">Id Registro :</string>
+    <string name="infantil">Parque Infantil</string>
+    <string name="unicentro">Parque Unicentro</string>
+    <string name="sanfelipe">Parque San Felipe</string>
+</resources>

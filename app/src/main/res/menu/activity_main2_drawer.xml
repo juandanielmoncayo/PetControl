@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@android:drawable/ic_menu_add"
+            android:title="@string/registro_nuevo_elemento" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="?android:attr/actionModeFindDrawable"
+            android:title="@string/ver_usuarios" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="?android:attr/actionModeFindDrawable"
+            android:title="@string/ver_mascotas" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="?android:attr/actionModeWebSearchDrawable"
+            android:title="@string/buscar_usuario" />
+        <item
+            android:id="@+id/nav_send"
+            android:icon="?android:attr/actionModeFindDrawable"
+            android:title="@string/veterinarias" />
+    </group>
+
+    <item android:title="@string/otras_opciones">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@android:drawable/ic_menu_myplaces"
+                android:title="@string/zonas_cercanas" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.juandanielmoncayo.veterinaria.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/images" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/cardview_light_background">
+
+        <ImageButton
+            android:id="@+id/exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="15dp"
+            android:background="@color/cardview_light_background"
+            android:onClick="salir"
+            app:srcCompat="@drawable/close" />
+
+        <ImageButton
+            android:id="@+id/acercadebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/exit"
+            android:layout_marginStart="22dp"
+            android:background="@color/cardview_light_background"
+            android:onClick="acerca"
+            app:srcCompat="@drawable/information" />
+
+        <ImageButton
+            android:id="@+id/btnOpcionRegistro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/registrotextview"
+            android:layout_marginTop="18dp"
+            android:layout_toStartOf="@+id/registrotextview"
+            android:background="@color/cardview_light_background"
+            android:onClick="onClick"
+            app:srcCompat="@mipmap/humano" />
+
+        <TextView
+            android:id="@+id/registrotextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="26dp"
+            android:text="@string/registrar"
+            android:textColor="@android:color/black"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/btnOpcionRegistro"
+            android:layout_below="@+id/btnOpcionRegistro"
+            android:layout_marginStart="23dp"
+            android:text="@string/nuevo_usuario"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/btnRegistroMascota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView12"
+            android:layout_toEndOf="@+id/registrotextview"
+            android:background="@color/cardview_light_background"
+            android:onClick="onClick"
+            app:srcCompat="@mipmap/huesoperro" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView9"
+            android:layout_alignBottom="@+id/textView9"
+            android:layout_alignEnd="@+id/btnRegistroMascota"
+            android:layout_marginEnd="15dp"
+            android:text="@string/nueva_mascota"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registro"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnOpcionRegistro2"
+                android:layout_width="191dp"
+                android:layout_height="match_parent"
+                android:drawableBottom="@android:color/holo_blue_dark"
+                android:editable="false"
+                android:onClick="onClick"
+                android:text="Registrar Usuarios"
+                tools:editable="false" />
+
+            <Button
+                android:id="@+id/btnRegistroMascota2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onClick"
+                android:text="Registrar Mascota" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Consultas"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnConsultaListaMascota2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onClick"
+                android:text="Consultar Lista Mascotas" />
+
+            <Button
+                android:id="@+id/btnConsultaIndividual2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onClick"
+                android:text="Consultar Usuario" />
+
+            <Button
+                android:id="@+id/btnConsultaListaPersonasRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onClick"
+                android:text="Consultar Lista Usuarios" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Autor"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/about_of"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="acerca"
+            android:text="Acerca de" />
+
+    </LinearLayout>
+
+</LinearLayout>

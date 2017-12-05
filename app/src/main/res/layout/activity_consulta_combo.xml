@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_consulta_combo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.juandanielmoncayo.veterinaria.ConsultaComboActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="@string/seleccione_una_opcion"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/comboPersonas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+            android:text="@string/documento_identificacion_usuario"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtDocumento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_weight="1"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/textView"
+            android:layout_toEndOf="@+id/textView"
+            android:layout_marginLeft="31dp"
+            android:layout_marginStart="31dp"
+            android:layout_above="@+id/txtNombre" />
+
+
+        <TextView
+            android:id="@+id/txtTelefono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_weight="1"
+            android:layout_alignBaseline="@+id/textView3"
+            android:layout_alignBottom="@+id/textView3"
+            android:layout_alignLeft="@+id/txtNombre"
+            android:layout_alignStart="@+id/txtNombre" />
+
+        <TextView
+            android:id="@+id/txtNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_weight="1"
+            android:layout_alignBaseline="@+id/textView2"
+            android:layout_alignBottom="@+id/textView2"
+            android:layout_alignLeft="@+id/txtDocumento"
+            android:layout_alignStart="@+id/txtDocumento" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_weight="0.5"
+            android:text="@string/nombre_usuario"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView"
+            android:layout_weight="0.5"
+            android:text="@string/telefono_usuario"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/btnActualizar2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtTelefono"
+            android:layout_marginTop="38dp"
+            android:layout_toStartOf="@+id/txtDocumento"
+            android:layout_weight="0.5"
+            android:background="@drawable/buttn"
+            android:onClick="salir"
+            android:text="@string/regresar" />
+
+        <Button
+            android:id="@+id/btnEliminar2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btnActualizar2"
+            android:layout_alignBottom="@+id/btnActualizar2"
+            android:layout_marginStart="31dp"
+            android:layout_toEndOf="@+id/btnActualizar2"
+            android:layout_weight="0.5"
+            android:background="@drawable/buttn"
+            android:onClick="eliminar2"
+            android:text="@string/borrar" />
+
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>
